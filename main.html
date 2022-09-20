@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML,CSS,Javascript" />
+    <meta name="author" content="vakho" />
+    <link rel="stylesheet" href="./main.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> -->
+    <title>Starbucks page</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="/main.html">
+            <img src="./logo.svg" alt="logo" />
+          </a>
+        </div>
+        <ul class="navbar-nav-left">
+          <li>
+            <a href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">Rewards</a>
+          </li>
+          <li>
+            <a href="#">Gift Cards</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav-right">
+          <li>
+            <a href="#"
+              ><img src="./marker.svg" alt="marker" /><span
+                >Find a store</span
+              ></a
+            >
+          </li>
+          <li>
+            <button class="btn btn-dark-outline">Sign in</button>
+          </li>
+          <li>
+            <button class="btn btn-dark">Join now</button>
+          </li>
+        </ul>
+      </div>
+      <button class="hamburger" id="menu-btn" type="button">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </nav>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Rewards</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
+      <div class="mobile-menu-bottom">
+        <button class="btn btn-dark-outline">Sign in</button>
+        <button class="btn btn-dark">Join now</button>
+        <div>
+          <a href="#">
+            <img src="./marker.svg" alt="marker" />
+            <span>Find a store</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- SECTIONS -->
+    <section class="box box-a bg-primary text-center py-md">
+      <div class="box-inner">
+        <h2 class="text-xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+          architecto.
+        </h2>
+        <p class="text-md">
+          Lorem ipsum, dolor sit amet consectetur adipisicing.
+          <a href="#">Learn more</a>
+        </p>
+      </div>
+    </section>
+    <section class="box box-b bg-secondary grid-col-2">
+      <img src="./box-b.png" alt="box" />
+      <div class="box-text">
+        <h2 class="text-xl">Lorem, ipsum dolor.</h2>
+        <p class="text-md">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima qui
+          quibusdam repellat soluta, placeat modi dolorum dolores distinctio
+          quisquam quia!
+        </p>
+        <a href="#" class="btn btn-light-outline">Order NOW.</a>
+      </div>
+    </section>
+    <section class="box box-c bg-secondary grid-col-2 grid-reversed">
+      <img src="./box-c.png" alt="box" />
+      <div class="box-text">
+        <h2 class="text-xl">Lorem ipsum dolor sit.</h2>
+        <p class="text-md">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+          ratione!
+        </p>
+        <a href="#" class="btn btn-light-outline">Order NOW.</a>
+      </div>
+    </section>
+    <section class="box box-d bg-primary grid-col-2">
+      <img src="./box-d.png" alt="box" />
+      <div class="box-text">
+        <h2 class="text-xl">Lorem, ipsum.</h2>
+        <p class="text-md">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro optio
+          recusandae enim perferendis!
+        </p>
+        <a href="#" class="btn btn-light-outline">Order NOW.</a>
+      </div>
+    </section>
+    <section class="box box-e bg-secondary grid-col-2 grid-reversed">
+      <img src="./box-e.jpg" alt="box" />
+      <div class="box-text">
+        <h2 class="text-md">Lorem ipsum dolor sit amet.</h2>
+        <p class="text-sm">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          nam, incidunt voluptatibus nisi quia vitae aut quisquam doloribus
+          itaque aliquid quidem, porro eligendi perspiciatis aliquam.
+        </p>
+        <a href="#" class="btn btn-light-outline">Order NOW.</a>
+      </div>
+    </section>
+    <section class="box box-f grid-col-2">
+      <div>
+        <img src="./box-f1.jpg" alt="box" />
+        <div class="bg-third py-lg">
+          <div class="box-text">
+            <h2 class="text-md">Lorem ipsum.</h2>
+            <p class="text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate itaque aliquid quidem, porro eligendi perspiciatis
+              aliquam.
+            </p>
+            <a href="#" class="btn btn-dark-outline">Order NOW.</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="./box-f2.jpg" alt="box" />
+        <div class="bg-primary py-lg">
+          <div class="box-text">
+            <h2 class="text-md">Ipsum dolor sit amet?</h2>
+            <p class="text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate nam, incidunt voluptatibus nisi quia vitae aut quisquam
+              doloribus
+            </p>
+            <a href="#" class="btn btn-light-outline">Order NOW.</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="divider"></div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="social">
+          <a href="https://instragram.com">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <p>&copy; Starbucks coffee company. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script defer src="./main.js"></script>
+</html>
